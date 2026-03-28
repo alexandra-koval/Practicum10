@@ -11,9 +11,9 @@ turtle.hideturtle()
 
 def draw_star(x_coordinate, y_coordinate, star_size):
     """Draws a single star"""
-    turtle.penup()
+    turtle.up()
     turtle.goto(x_coordinate, y_coordinate)
-    turtle.pendown()
+    turtle.down()
     turtle.color("gold")
     turtle.dot(star_size)
 
@@ -29,9 +29,9 @@ def draw_stars():
 
 def draw_moon():
     """Draws the moon"""
-    turtle.penup()
+    turtle.up()
     turtle.goto(350, 280)
-    turtle.pendown()
+    turtle.down()
     turtle.color("gold")
     turtle.begin_fill()
     turtle.circle(35)
@@ -42,9 +42,9 @@ def draw_rectangular_building(
     x_coordinate, y_coordinate, building_width, building_height
 ):
     """Draws a rectangular building (black)"""
-    turtle.penup()
+    turtle.up()
     turtle.goto(x_coordinate, y_coordinate)
-    turtle.pendown()
+    turtle.down()
     turtle.color("black")
     turtle.begin_fill()
     for _ in range(2):
@@ -59,9 +59,9 @@ def draw_triangle_roof(
     x_coordinate, y_coordinate, building_width, building_height
 ):
     """Draws a triangular roof (black)"""
-    turtle.penup()
+    turtle.up()
     turtle.goto(x_coordinate, y_coordinate + building_height)
-    turtle.pendown()
+    turtle.down()
     turtle.color("black")
     turtle.begin_fill()
     roof_peak_y = y_coordinate + building_height + building_width / 3
@@ -73,9 +73,9 @@ def draw_triangle_roof(
 
 def draw_window(x_coordinate, y_coordinate, window_size, is_lit):
     """Draws a square window"""
-    turtle.penup()
+    turtle.up()
     turtle.goto(x_coordinate, y_coordinate)
-    turtle.pendown()
+    turtle.down()
     if is_lit:
         turtle.color("yellow")
     else:
@@ -169,9 +169,9 @@ def draw_city():
 
 def draw_ground():
     """Draws the ground line"""
-    turtle.penup()
+    turtle.up()
     turtle.goto(-500, -340)
-    turtle.pendown()
+    turtle.down()
     turtle.color("gray")
     turtle.pensize(2)
     turtle.goto(500, -340)
