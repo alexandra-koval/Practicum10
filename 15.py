@@ -3,7 +3,6 @@ import random
 
 turtle.setup(1000, 700)
 turtle.bgcolor("darkblue")
-turtle.title("Городской силуэт")
 turtle.tracer(0)
 turtle.speed(0)
 turtle.hideturtle()
